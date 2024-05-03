@@ -90,14 +90,14 @@ else:
     print("It's cold")
 print("Done")
 
-weight = input("Weightt: ")
-unit = int(input("(K)g or (L)bs: "))
+weight = int(input("Weightt: "))
+unit = (input("(K)g or (L)bs: "))
 if unit.upper() == "K":
     converted = weight / 0.45
-    print("Weight in Lbs: " + converted)
+    print("Weight in Lbs: " + str(converted))
 else:
     converted = weight * 0.45
-    print("Weight in Kg: " + converted)
+    print("Weight in Kg: " + str(converted))
 
 
 
